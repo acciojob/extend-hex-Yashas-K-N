@@ -4,11 +4,13 @@ const extendHex = (shortHex) => {
 	let output = "#";
 	for (let i = 0; i < shortHex.length; i++){
 		let ascii = shortHex[i].charCodeAt(0);
-		 if (ascii > "A" && ascii <"Z"){
+		 if (ascii > "65" && ascii <"90")
+		 // if (ascii > "A" && ascii <"Z"){
 			 isCapital = true;
 		 }
-		for(let j = 0; j <= 2; j++ )
-		output += shortHex[i];
+		ouput += shortHex[i] + shortHex[i];
+		// for(let j = 0; j <= 2; j++ )
+		// output += shortHex[i];
 	}
 	return isCapital?"output.toUpperCase()":"output";
 };
