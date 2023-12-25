@@ -9,9 +9,10 @@ const extendHex = (shortHex) => {
 		  {
 			 isCapital = false;
 		 }
-		ouput += shortHex[i] + shortHex[i];
-		// for(let j = 0; j <= 2; j++ )
-		// output += shortHex[i];
+		// ouput += shortHex[i] + shortHex[i];
+		 for(let j = 0; j <= 2; j++ ){
+		 output += shortHex[i];
+		 }
 	}
 	return isCapital?"output.toUpperCase()":"output";
 };
