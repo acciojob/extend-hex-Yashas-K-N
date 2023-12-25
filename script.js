@@ -3,7 +3,7 @@ const extendHex = (shortHex) => {
 	let i = shortHex.length-3; isCapital = true ;
 	var output = "#";
 	for (let i = 0; i < shortHex.length; i++){
-		let ascii = shortHex[i].charCodeAt(0);
+		let ascii = shortHex[i];
 		 if (ascii > "a" && ascii <"z")
 		 //if (ascii > "A" && ascii <"Z")//
 		  {
