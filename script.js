@@ -14,7 +14,7 @@ const extendHex = (shortHex) => {
 		 output += shortHex[i];
 		 }
 	}
-	return isCapital?"output.UpperCase()":"output";
+	return isCapital?"output":"output.UpperCase";
 };
 
 // Do not change the code below.
